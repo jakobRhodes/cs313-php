@@ -64,4 +64,4 @@ VALUES ('Bob the Blacksmith', 'Muscular, Friendly', '20STR, 12DEX, 11INT, 16CON,
 INSERT INTO Monsters (Monster_Name, Monster_Description, Monster_Stats, Monster_Loot)
 VALUES ('Goblin', 'Small, Green, Evil', '12STR, ,11DEX, 3INT, 4CON, 12WIS, 8CHA,', 'Iron Dagger, 50 gold pieces');
 INSERT INTO Items (Item_Name, Item_Description, Item_Effect, Item_Price)
-VALUES ('Iron Dagger', 'Small dagger of well wrought iron.', '+2 Dmg, +1 Str', '100 gold pieces');
+VALUES ('Iron Dagger', 'Small dagger of well wrought iron.', '+2 Dmg, +1 Str', '100');
