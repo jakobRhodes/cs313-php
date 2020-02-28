@@ -56,6 +56,10 @@ INSERT INTO User_Account (User_Name, User_Password)
 VALUES ('John', 'Johnson');
 INSERT INTO Player_Character (Character_Name, Character_Description, Character_Stats)
 VALUES ('Johnny The Swordsman', 'Tall, Handsome, Strong', '18STR, 13DEX, 12INT, 16CON, 14WIS, 16CHA,');
+INSERT INTO Player_Character (Character_Name, Character_Description, Character_Stats)
+VALUES ('Bob The Blademaster', 'Short, Fat, Bald', '13STR, 13DEX, 12INT, 11CON, 14WIS, 12CHA,');
+INSERT INTO Player_Character (Character_Name, Character_Description, Character_Stats)
+VALUES ('Tim The Wizard', 'Tall, Old, Lanky', '8STR, 13DEX, 12INT, 1CON, 14WIS, 14CHA,');
 INSERT INTO Encounters (Encounter_Name, Encounter_Type, Encounter_Description, Encounter_Rewards, Encounter_Result)
 VALUES ('The Swamp', 'Combat', 'An oozing swamp bubbling with ferocious creatures and cretins. A goblin blocks the way.', 
         'An iron dagger, 50 gold pieces.', 'You beat the goblin!');
