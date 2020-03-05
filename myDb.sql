@@ -11,8 +11,14 @@ CREATE TABLE Player_Character (
     User_ID int,
     Character_Name varchar(255) NOT NULL,
     Character_Description varchar(255) NOT NULL,
-    Character_Stats varchar(255) NOT NULL,
-	PRIMARY KEY (Character_ID),
+    Character_Race varchar(255) NOT NULL,
+    Character_STR varchar(255) NOT NULL,
+    Character_DEX varchar(255) NOT NULL,
+    Character_CON varchar(255) NOT NULL,
+    Character_INT varchar(255) NOT NULL,
+    Character_WIS varchar(255) NOT NULL,
+    Character_CHA varchar(255) NOT NULL,
+    PRIMARY KEY (Character_ID),
     FOREIGN KEY (User_ID) REFERENCES User_Account(User_ID)
 );
 ALTER TABLE User_Account
@@ -38,7 +44,8 @@ CREATE TABLE Monsters (
     Monster_ID SERIAL,
     Monster_Name varchar(255) NOT NULL,
     Monster_Description varchar(255) NOT NULL,
-    Monster_Stats varchar(255) NOT NULL,
+    Monster_HP varchar(255) NOT NULL,
+    Monster_Attack varchar(255) NOT NULL,
     Monster_Loot varchar(255) NOT NULL, 
     PRIMARY KEY (Monster_ID)
 );
