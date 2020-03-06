@@ -12,12 +12,12 @@ CREATE TABLE Player_Character (
     Character_Name varchar(255) NOT NULL,
     Character_Description varchar(255) NOT NULL,
     Character_Race varchar(255) NOT NULL,
-    Character_STR varchar(255) NOT NULL,
-    Character_DEX varchar(255) NOT NULL,
-    Character_CON varchar(255) NOT NULL,
-    Character_INT varchar(255) NOT NULL,
-    Character_WIS varchar(255) NOT NULL,
-    Character_CHA varchar(255) NOT NULL,
+    Character_STR INTEGER NOT NULL,
+    Character_DEX INTEGER NOT NULL,
+    Character_CON INTEGER NOT NULL,
+    Character_INT INTEGER NOT NULL,
+    Character_WIS INTEGER NOT NULL,
+    Character_CHA INTEGER NOT NULL,
     PRIMARY KEY (Character_ID),
     FOREIGN KEY (User_ID) REFERENCES User_Account(User_ID)
 );
@@ -73,6 +73,6 @@ VALUES ('The Swamp', 'Combat', 'An oozing swamp bubbling with ferocious creature
 INSERT INTO NPCS (NPC_Name, NPC_Description, NPC_Stats)
 VALUES ('Bob the Blacksmith', 'Muscular, Friendly', '20STR, 12DEX, 11INT, 16CON, 10WIS, 18CHA,');
 INSERT INTO Monsters (Monster_Name, Monster_Description, Monster_HP, Monster_Attack, Monster_Loot)
-VALUES ('Goblin', 'Small, Green, Evil', '6hp', '1d6', 'Iron Dagger, 50 gold pieces');
+VALUES ('Goblin', 'Small, Green, Evil', '6', '1d6', 'Iron Dagger, 50 gold pieces');
 INSERT INTO Items (Item_Name, Item_Description, Item_Effect, Item_Price)
 VALUES ('Iron Dagger', 'Small dagger of well wrought iron.', '+2 Dmg, +1 Str', '100');
