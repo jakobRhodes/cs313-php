@@ -1,0 +1,35 @@
+<?php
+if(isset($_GET['answer']))
+{
+    $answer = $_GET['answer'];
+    if($answer == -1)
+    {
+        echo '<script>alert("incorrect username/password");</script>';
+    }
+}
+?>
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .login {
+    text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="login">
+<h1>Please login!<h1>
+<form action="verifyuser.php" method="post">
+<label for="username">Username:</label>
+<input type="text" id="username" name="username_input"><br><br>
+<label for="password">Password:</label>
+<input type="text" id="password" name="password_input"><br><br>
+<input type="submit" value="Submit">
+</form>
+<a href="sign_up.php">Sign up!</a>
+</div>
+</body>
+</html>
