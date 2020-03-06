@@ -61,18 +61,18 @@ CREATE TABLE Items (
 /*Insert default and test data into the tables*/
 INSERT INTO User_Account (User_Name, User_Password)
 VALUES ('John', 'Johnson');
-INSERT INTO Player_Character (Character_Name, Character_Description, Character_Stats)
-VALUES ('Johnny The Swordsman', 'Tall, Handsome, Strong', '18STR, 13DEX, 12INT, 16CON, 14WIS, 16CHA,');
-INSERT INTO Player_Character (Character_Name, Character_Description, Character_Stats)
-VALUES ('Bob The Blademaster', 'Short, Fat, Bald', '13STR, 13DEX, 12INT, 11CON, 14WIS, 12CHA,');
-INSERT INTO Player_Character (Character_Name, Character_Description, Character_Stats)
-VALUES ('Tim The Wizard', 'Tall, Old, Lanky', '8STR, 13DEX, 12INT, 1CON, 14WIS, 14CHA,');
+INSERT INTO Player_Character (Character_Name, Character_Description, Character_Race, Character_STR, Character_DEX, Character_CON, Character_INT, Character_WIS,Character_CHA)
+VALUES ('Johnny The Swordsman', 'Tall, Handsome, Strong', 'Human', '18', '13', '6', '16', '14', '3');
+INSERT INTO Player_Character (Character_Name, Character_Description, Character_Race, Character_STR, Character_DEX, Character_CON, Character_INT, Character_WIS,Character_CHA)
+VALUES ('Bob The Blademaster', 'Short, Fat, Bald', 'Orc', '14', '13', '12', '13', '14', '3');
+INSERT INTO Player_Character (Character_Name, Character_Description, Character_Race, Character_STR, Character_DEX, Character_CON, Character_INT, Character_WIS,Character_CHA)
+VALUES ('Tim The Wizard', 'Tall, Old, Lanky', 'Elf', '18', '5', '12', '16', '14', '16');
 INSERT INTO Encounters (Encounter_Name, Encounter_Type, Encounter_Description, Encounter_Rewards, Encounter_Result)
 VALUES ('The Swamp', 'Combat', 'An oozing swamp bubbling with ferocious creatures and cretins. A goblin blocks the way.', 
         'An iron dagger, 50 gold pieces.', 'You beat the goblin!');
 INSERT INTO NPCS (NPC_Name, NPC_Description, NPC_Stats)
 VALUES ('Bob the Blacksmith', 'Muscular, Friendly', '20STR, 12DEX, 11INT, 16CON, 10WIS, 18CHA,');
-INSERT INTO Monsters (Monster_Name, Monster_Description, Monster_Stats, Monster_Loot)
-VALUES ('Goblin', 'Small, Green, Evil', '12STR, ,11DEX, 3INT, 4CON, 12WIS, 8CHA,', 'Iron Dagger, 50 gold pieces');
+INSERT INTO Monsters (Monster_Name, Monster_Description, Monster_HP, Monster_Attack, Monster_Loot)
+VALUES ('Goblin', 'Small, Green, Evil', '6hp', '1d6', 'Iron Dagger, 50 gold pieces');
 INSERT INTO Items (Item_Name, Item_Description, Item_Effect, Item_Price)
 VALUES ('Iron Dagger', 'Small dagger of well wrought iron.', '+2 Dmg, +1 Str', '100');
